@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - courses</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, <span id="studentName">Student</span>!</h1>
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+        
+        <h2>Your Enrolled Courses</h2>
+        <div class="courses">
+            <div class="card" onclick="openMaterials('Core Java')"> Core Java</div>
+            <div class="card" onclick="openMaterials('Java 8 Features')">Java 8 Features</div>
+            <div class="card" onclick="openMaterials('Node.js Crash Course')">Node.js Crash Course</div>
+            <div class="card" onclick="openMaterials('PHP for Beginners')">PHP for Beginners</div>
+        </div>
+
+        <h2>Available Courses</h2>
+        <div class="courses">
+            <div class="card">🔹 Spring Boot Basics</div>
+            <div class="card">🔹 JavaScript Essentials</div>
+            <div class="card">🔹 Kotlin Development Basics</div>
+            <div class="card">🔹 C++ Foundations</div>
+            <div class="card">🔹 Angular Quickstart</div>
+            <div class="card">🔹 Python Fundamentals</div>
+        </div>
+
+        <div id="studyMaterials" class="materials">
+            <h2>Study Materials</h2>
+            <p id="courseTitle"></p>
+            <ul id="materialsList"></ul>
+        </div>
+        <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

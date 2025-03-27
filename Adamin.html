@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+    <div class="Adamincontainer">
+        <h2>Admin Panel - Register Students</h2>
+        <form id="enrollForm" onsubmit="return enrollStudent()">
+            <input type="text" id="studentName" placeholder="Enter Student Name" required>
+            <input type="text" id="studentSurname" placeholder="Enter Surname" required>
+            <input type="email" id="studentEmail" placeholder="Enter Student Email" required>
+            <input type="password" id="studentPassword" placeholder="Create Password (8 Characters Minimum)" minlength="8" required>
+    
+            <h3>Select Courses</h3>
+            <div class="course-container" id="courseContainer">
+                <div class="course-item">
+                    <input type="checkbox" id="coreJava" value="Core Java">
+                    <label for="coreJava">Core Java</label>
+                </div>
+                <div class="course-item">
+                    <input type="checkbox" id="java8" value="Java 8 Features">
+                    <label for="java8">Java 8 Features</label>
+                </div>
+                <div class="course-item">
+                    <input type="checkbox" id="springBoot" value="Spring Boot Basics">
+                    <label for="springBoot">Spring Boot Basics</label>
+                </div>
+                <div class="course-item">
+                    <input type="checkbox" id="mySQL" value="MySQL Basics">
+                    <label for="mySQL">MySQL Basics</label>
+                </div>
+            </div>
+    
+            <button class="button" type="submit">Register Student</button>
+            <button  class="button" type="button" onclick="joinUser()">Join</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
